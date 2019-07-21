@@ -13,6 +13,10 @@ module.exports = {
   devServer: {
     contentBase: './build',
   },
+  resolve: {
+    modules: [path.resolve('src'), 'node_modules'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json']
+  },
   module: {
     rules: [
       {
@@ -28,6 +32,7 @@ module.exports = {
           'less-loader',
         ],
       },
+      { test: /\.(gif|jpe?g|png|ttf|woff2?|eot|svg)$/, use: [{ loader: 'url-loader', options: { limit: 10000 } }] }
     ]
   },
   plugins: [
