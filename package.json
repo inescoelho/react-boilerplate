@@ -2,12 +2,15 @@
   "name": "react-boilerplate",
   "version": "1.0.0",
   "description": "Boilerplate configuration for React projects",
+  "homepage": "http://www.inescoelho.info/react-boilerplate/",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "format": "prettier --write \"src/**/*.js\"",
     "eslint-fix": "eslint --fix \"src/**/*.js\"",
     "build": "webpack --mode production",
+    "predeploy": "webpack --mode production",
+    "deploy": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,8 +23,8 @@
   "bugs": {
     "url": "https://github.com/inescoelho/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/inescoelho/react-boilerplate#readme",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
