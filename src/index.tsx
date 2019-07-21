@@ -1,4 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-ReactDOM.render(<>Hello World!</>, document.getElementById('root'));
+import './index.less';
+
+ReactDOM.render(<div className={"hello"}>Hello World2!</div>, document.getElementById('root'));
