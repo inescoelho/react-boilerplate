@@ -5,7 +5,8 @@
   "homepage": "http://www.inescoelho.info/react-boilerplate/",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --mode development --open",
     "format": "prettier --write \"src/**/*.tsx\"",
     "eslint-fix": "eslint --fix \"src/**/*.tsx\"",
     "build": "webpack --mode production",

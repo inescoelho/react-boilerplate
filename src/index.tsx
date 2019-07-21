@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 
 import './index.less';
 
-ReactDOM.render(<div className={"hello"}>Hello World2!</div>, document.getElementById('root'));
+ReactDOM.render(<><div className={"hello"}>Hello WorldASDDDDDDDDDDD!</div>CZXVXGEZFS</>, document.getElementById('root'));
